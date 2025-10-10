@@ -16,12 +16,12 @@ function Hero() {
         </div>
         <p className="ptag">Also Available On</p>
         <div className="hero-icon">
-          <img src="../public/flipkart.png" alt="" />
-          <img src="../public/amazon.png" alt="" />
+          <img src="./src/assets/flipkart.png" alt="" />
+          <img src="./src/assets/amazon.png" alt="" />
         </div>
       </div>
       <div className="hero-img">
-        <img src="../public/shoe_image.png" alt="" />
+        <img src="./src/assets/shoe_image.png" alt="" />
       </div>
     </div>
   );

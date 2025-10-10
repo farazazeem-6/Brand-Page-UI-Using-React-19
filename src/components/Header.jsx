@@ -66,7 +66,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src="../public/brand_logo.png" alt="" />
+        <img src="./src/assets/brand_logo.png" alt="" />
       </div>
       <ul className="navItems">
         <li>MENU</li>
