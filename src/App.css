@@ -2,6 +2,10 @@
   --red: #d01c28;
   --grey: #5a5959;
 }
+#mainContainer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 .header {
   display: flex;
   align-items: center;
@@ -86,7 +90,7 @@
   margin-top: 10px;
 }
 
-.btns{
+.btns {
   display: flex;
   align-items: center;
   justify-content: space-between;
