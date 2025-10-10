@@ -4,6 +4,8 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { ThemeProvider } from "../App";
+import myImg from '/src/assets/brand_logo.png'
+
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -66,7 +68,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src="./src/assets/brand_logo.png" alt="" />
+        <img src={myImg} alt="" />
       </div>
       <ul className="navItems">
         <li>MENU</li>
