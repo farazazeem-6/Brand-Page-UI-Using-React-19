@@ -3,8 +3,7 @@ import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-
-
+import { ThemeProvider } from "../App";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -62,6 +61,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 function Header() {
+  const { theme, toggleTheme } = useContext(ThemeProvider);
+  // console.log(theme);
+
   return (
     <div className="header">
       <div className="logo">
@@ -77,6 +79,7 @@ function Header() {
         <button className="login">Login</button>
         <FormGroup>
           <FormControlLabel
+            onChange={toggleTheme}
             control={<MaterialUISwitch sx={{ m: 1 }} />}
             label=""
           />
