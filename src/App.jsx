@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -9,7 +9,7 @@ function App() {
   const [theme, setTheme] = useState("light");
   function toggleTheme() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    console.log('Toggling');
+    console.log("Toggling");
   }
   return (
     <div className={theme} id="mainContainer">
