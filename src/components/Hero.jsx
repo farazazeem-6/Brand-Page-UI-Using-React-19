@@ -1,4 +1,3 @@
-import React from "react";
 import myShoe from "/src/assets/shoe_image.png";
 import flipkart from "/src/assets/flipkart.png";
 import amazon from "/src/assets/amazon.png";
