@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 
 const ThemeProvider = createContext();
-
 function App() {
   const [theme, setTheme] = useState("light");
   function toggleTheme() {
@@ -20,6 +19,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 export { ThemeProvider };

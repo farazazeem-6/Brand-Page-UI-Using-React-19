@@ -80,7 +80,6 @@ function Header() {
           <FormControlLabel
             onChange={toggleTheme}
             control={<MaterialUISwitch sx={{ m: 1 }} />}
-            label=""
           />
         </FormGroup>
       </div>
