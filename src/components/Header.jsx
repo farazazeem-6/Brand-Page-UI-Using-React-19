@@ -62,7 +62,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 function Header() {
-  const { theme, toggleTheme } = useContext(ThemeProvider);
+  const { toggleTheme } = useContext(ThemeProvider);
   return (
     <div className="header">
       <div className="logo">
