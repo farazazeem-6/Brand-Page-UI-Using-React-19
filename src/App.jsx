@@ -8,7 +8,6 @@ function App() {
   const [theme, setTheme] = useState("light");
   function toggleTheme() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    console.log("Toggling");
   }
   return (
     <div className={theme} id="mainContainer">
