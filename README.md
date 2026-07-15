@@ -1,16 +1,54 @@
-# React + Vite
+# Brand Page Using React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple brand landing page built with React and Vite.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates a clean, responsive brand page structure using React components and modern CSS. It includes:
 
-## React Compiler
+- A responsive `Header` component
+- A `Hero` section with headline, supporting text, and call-to-action
+- Vite-powered development server with fast refresh
+- Minimal setup for quick experimentation and learning
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the app in your browser at the local URL shown in the terminal.
+
+## Project Structure
+
+- `src/main.jsx` — application entry point
+- `src/App.jsx` — main app layout
+- `src/components/Header.jsx` — brand page header/navigation
+- `src/components/Hero.jsx` — hero section for the landing page
+- `src/App.css` / `src/index.css` — styles for layout and visuals
+
+## Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+This repository is intended for practice and learning React with Vite. Feel free to customize the branding, colors, and layout to match your own project design.
