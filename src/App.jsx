@@ -1,22 +1,29 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useMemo, useCallback } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
-const ThemeProvider = createContext();
+const ThemeContext = createContext();
 function App() {
   const [theme, setTheme] = useState("light");
-  function toggleTheme() {
+
+  const toggleTheme = useCallback(() => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  }
+  }, []);
+
+  const themeValue = useMemo(
+    () => ({ theme, toggleTheme }),
+    [theme, toggleTheme],
+  );
+
   return (
     <div className={theme} id="mainContainer">
-      <ThemeProvider value={{ theme, toggleTheme }}>
+      <ThemeContext.Provider value={themeValue}>
         <Header />
         <Hero />
-      </ThemeProvider>
+      </ThemeContext.Provider>
     </div>
   );
 }
 export default App;
-export { ThemeProvider };
+export { ThemeContext };
