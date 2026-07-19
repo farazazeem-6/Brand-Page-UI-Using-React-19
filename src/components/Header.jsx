@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import { ThemeProvider } from "../App";
+import { ThemeContext } from "../App";
 import myImg from "/src/assets/brand_logo.png";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -62,11 +62,11 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 function Header() {
-  const { toggleTheme } = useContext(ThemeProvider);
+  const { toggleTheme } = useContext(ThemeContext);
   return (
     <div className="header">
       <div className="logo">
-        <img src={myImg} alt="" />
+        <img src={myImg} alt="Brand logo" />
       </div>
       <ul className="navItems">
         <li>MENU</li>

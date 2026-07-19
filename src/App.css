@@ -39,7 +39,7 @@
 .hero {
   width: 1280px;
   margin: 0 auto;
-  height: calc(100vh-75px);
+  height: calc(100vh - 75px);
   display: flex;
   align-items: center;
   justify-content: space-between;
